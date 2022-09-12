@@ -1,34 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="lab0.var1Test" tests="28" skipped="0" failures="0" errors="0" timestamp="2022-09-11T21:01:54" hostname="DESKTOP-KQTI0ID" time="3.46">
+<testsuite name="lab0.var1Test" tests="31" skipped="0" failures="0" errors="0" timestamp="2022-09-12T11:02:52" hostname="DESKTOP-KQTI0ID" time="3.388">
   <properties/>
-  <testcase name="task1[0](100, 1)" classname="lab0.var1Test" time="0.007"/>
+  <testcase name="negativeTask4" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="negativeTask5" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="negativeTask6" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="negativeTask8" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task1[0](100, 1)" classname="lab0.var1Test" time="0.0"/>
   <testcase name="task1[1](525, 5)" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task2[0](5, true)" classname="lab0.var1Test" time="0.001"/>
+  <testcase name="task2[0](5, true)" classname="lab0.var1Test" time="0.0"/>
   <testcase name="task2[1](99999, true)" classname="lab0.var1Test" time="0.0"/>
   <testcase name="task2[2](0, false)" classname="lab0.var1Test" time="0.001"/>
   <testcase name="task2[3](-3, false)" classname="lab0.var1Test" time="0.001"/>
   <testcase name="task2[4](-99999, false)" classname="lab0.var1Test" time="0.001"/>
-  <testcase name="task3[0](5, 6)" classname="lab0.var1Test" time="0.001"/>
-  <testcase name="task3[1](99999, 100000)" classname="lab0.var1Test" time="0.001"/>
+  <testcase name="task3[0](5, 6)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task3[1](99999, 100000)" classname="lab0.var1Test" time="0.0"/>
   <testcase name="task3[2](0, 0)" classname="lab0.var1Test" time="0.0"/>
   <testcase name="task3[3](-3, -3)" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task3[4](-99999, -99999)" classname="lab0.var1Test" time="0.002"/>
-  <testcase name="task4[0](1, MONDAY)" classname="lab0.var1Test" time="0.001"/>
+  <testcase name="task3[4](-99999, -99999)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task4[0](1, MONDAY)" classname="lab0.var1Test" time="0.0"/>
   <testcase name="task4[1](5, FRIDAY)" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task4[2](0, null)" classname="lab0.var1Test" time="0.001"/>
-  <testcase name="task4[3](9, null)" classname="lab0.var1Test" time="0.002"/>
-  <testcase name="task5[0](1, 5, 1 1 1 1 1 )" classname="lab0.var1Test" time="0.001"/>
-  <testcase name="task5[1](5, 3, 5 5 5 )" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task5[2](5, 0, )" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task4[2](7, SUNDAY)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task5[0](1, 5, [I@4a8355dd)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task5[1](5, 3, [I@c430e6c)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task5[2](100, 1, [I@536f2a7e)" classname="lab0.var1Test" time="0.0"/>
   <testcase name="task6[0](5, 2, 1)" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task6[1](100.9, 10.1, 10)" classname="lab0.var1Test" time="0.003"/>
-  <testcase name="task6[2](9.999999999, 1.0E-8, 0)" classname="lab0.var1Test" time="3.384"/>
-  <testcase name="task7[0](5, [I@52f27fbd)" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task7[1](9, [I@4a8355dd)" classname="lab0.var1Test" time="0.001"/>
-  <testcase name="task7[2](-1, null)" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task8[0](2, 2, [[I@312aa7c)" classname="lab0.var1Test" time="0.006"/>
-  <testcase name="task8[1](4, 5, [[I@4007f65e)" classname="lab0.var1Test" time="0.0"/>
-  <testcase name="task8[2](8, 7, [[I@eadd4fb)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task6[1](100.9, 10.1, 10)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task6[2](9.999999999, 1.0E-8, 0)" classname="lab0.var1Test" time="3.306"/>
+  <testcase name="task7" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task7[0](5, [I@65987993)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task7[1](9, [I@4f32a3ad)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task8[0](2, 2, [[I@4d1bf319)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task8[1](4, 5, [[I@eadd4fb)" classname="lab0.var1Test" time="0.0"/>
+  <testcase name="task8[2](8, 7, [[I@17bffc17)" classname="lab0.var1Test" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

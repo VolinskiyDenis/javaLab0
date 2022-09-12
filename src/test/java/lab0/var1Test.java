@@ -49,18 +49,27 @@ public class var1Test {
 
 	@DataProvider
 	public Object[][] myCaseProvider(){
-		return new Object[][]{{1, DAY_OF_WEEK.MONDAY}, {5, DAY_OF_WEEK.FRIDAY}, {0, null}, {9, null}};
+		return new Object[][]{{1, DAY_OF_WEEK.MONDAY}, {5, DAY_OF_WEEK.FRIDAY}, {7, DAY_OF_WEEK.SUNDAY}};
 	}
-
+	//negative test
+	@Test(expectedExceptions = RuntimeException.class)
+	public void negativeTask4(){
+		new var1().FDay(-2);
+	}
 	//
 	@Test(dataProvider = "myForProvider")
-	public void task5(int K, int N, String str){
-		assertEquals(new var1().FFor(K, N), str);
+	public void task5(int K, int N, int[] arr){
+		assertEquals(new var1().FFor(K, N), arr);
 	}
 
 	@DataProvider
 	public Object[][] myForProvider(){
-		return new Object[][]{{1, 5, "1 1 1 1 1 "}, {5, 3, "5 5 5 "}, {5, 0, ""}};
+		return new Object[][]{{1, 5, new int[]{1,1,1,1,1}}, {5, 3, new int[]{5,5,5}}, {100, 1, new int[]{100}}};
+	}
+	// negative test
+	@Test(expectedExceptions = RuntimeException.class)
+	public void negativeTask5(){
+		new var1().FFor(5,-2);
 	}
 
 	//
@@ -73,6 +82,11 @@ public class var1Test {
 	public Object[][] myWhileProvider(){
 		return new Object[][]{{5, 2, 1}, {100.9, 10.1, 10}, {9.999_999_999, 0.000_000_01, 0}};  //EPS = 0.000_000_1
 	}
+	// negative test
+	@Test(expectedExceptions = RuntimeException.class)
+	public void negativeTask6(){
+		new var1().FWhile(1,2);
+	}
 
 	//
 	@Test(dataProvider = "myArrayProvider")
@@ -82,7 +96,12 @@ public class var1Test {
 
 	@DataProvider
 	public Object[][] myArrayProvider(){
-		return new Object[][]{{5, new int[]{1, 3, 5, 7, 9}}, {9, new int[]{1, 3, 5, 7, 9, 11, 13, 15, 17}}, {-1, null}};
+		return new Object[][]{{5, new int[]{1, 3, 5, 7, 9}}, {9, new int[]{1, 3, 5, 7, 9, 11, 13, 15, 17}}};
+	}
+	//negative test
+	@Test(expectedExceptions = RuntimeException.class)
+	public void task7(){
+		new var1().FArray(-1);
 	}
 
 	//
@@ -100,6 +119,13 @@ public class var1Test {
 		int[][] result3 = {{10, 10, 10, 10, 10, 10, 10, 10}, {20, 20, 20, 20, 20, 20, 20, 20}, {30, 30, 30, 30, 30, 30, 30, 30}, {40, 40, 40, 40, 40, 40, 40, 40}, {50, 50, 50, 50, 50, 50, 50, 50}, {60, 60, 60, 60, 60, 60, 60, 60}, {70, 70, 70, 70, 70, 70, 70, 70}};
 		return new Object[][]{{2, 2, result1}, {4, 5, result2}, {8, 7, result3}};
 	}
+
+	//negative test
+	@Test(expectedExceptions = RuntimeException.class)
+	public void negativeTask8(){
+		new var1().FMatrix(-2, 0);
+	}
+
 }
 
 
