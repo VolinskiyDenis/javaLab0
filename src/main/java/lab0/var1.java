@@ -6,22 +6,22 @@ public class var1 {
 		MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
 	}
 
-	public int FInteger(int cm){
+	public int getInteger(int cm){
 		return cm / 100;
 	} //Дано расстояние L в сантиметрах. используя операцию деления нацело, найти количество полных метров в нем (1 метр = 100 см).
 
-	public boolean FBoolean(int A){
+	public boolean getBoolean(int A){
 		return A > 0;
 	} //Дано целое число A. Проверить истинность высказывания: «Число A является положительным».
 
-	public int FIf(int num){
+	public int getIf(int num){
 		if(num > 0)
 			return num+1;
 		return num;
 	}//Дано целое число. Если оно является положительным, то прибавить к нему 1; в противном случае не изменять его.
 	// Вывести полученное число.
 
-	public DAY_OF_WEEK FDay(int n){
+	public DAY_OF_WEEK getDay(int n){
 		switch(n){
 			case 1: return DAY_OF_WEEK.MONDAY;
 			case 2: return DAY_OF_WEEK.TUESDAY;
@@ -35,7 +35,7 @@ public class var1 {
 	}//Дано целое число в диапазоне 1–7. Вывести строку — название дня недели, соответствующее данному числу
 	// (1 — «понедельник», 2 — «вторник» и т. д.).
 
-	public int[] FFor(int K, int N){
+	public int[] getFor(int K, int N){
 		if(N <= 0) throw new RuntimeException();
 		int[]arr = new int[N];
 		for(int i = 0; i < N; i++)
@@ -43,7 +43,7 @@ public class var1 {
 		return arr;
 	}//Даны целые числа K и N (N > 0). Вывести N раз число K.
 
-	public double FWhile(double A, double B){
+	public double getWhile(double A, double B){
 		if(A < B)
 			throw new RuntimeException();
 		do{
@@ -53,7 +53,7 @@ public class var1 {
 	}//Даны положительные числа A и B (A > B). На отрезке длины A размещено максимально возможное количество
 	// отрезков длины B (без наложений). Не используя операции умножения и деления, найти длину незанятой части отрезка A.
 
-	public int[] FArray(int N){
+	public int[] getArray(int N){
 		if(N <= 0)
 			throw new RuntimeException();
 		int[] array = new int[N];
@@ -63,7 +63,7 @@ public class var1 {
 	}//Дано целое число N (> 0). Сформировать и вывести целочисленный массив размера N
 	// содержащий N первых положительных нечетных чисел: 1, 3, 5, … .
 
-	public static int[][]FMatrix(int N, int M){
+	public static int[][]getMatrix(int N, int M){
 		if(N <= 0 && M <= 0)
 			throw new RuntimeException();
 		int[][] matrix = new int[M][N];

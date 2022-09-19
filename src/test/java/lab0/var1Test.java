@@ -11,7 +11,7 @@ public class var1Test {
 
 	@Test(dataProvider = "myIntegerProvider")
 	public void task1(int cm, int m){
-		assertEquals(new var1().FInteger(cm), m);
+		assertEquals(new var1().getInteger(cm), m);
 	}
 
 	@DataProvider
@@ -22,7 +22,7 @@ public class var1Test {
 	//
 	@Test(dataProvider = "myBooleanProvider")
 	public void task2(int A, boolean B){
-		assertEquals(new var1().FBoolean(A), B);
+		assertEquals(new var1().getBoolean(A), B);
 	}
 
 	@DataProvider
@@ -33,7 +33,7 @@ public class var1Test {
 	//
 	@Test(dataProvider = "myIfProvider")
 	public void task3(int num1, int num2){
-		assertEquals(new var1().FIf(num1), num2);
+		assertEquals(new var1().getIf(num1), num2);
 	}
 
 	@DataProvider
@@ -44,7 +44,7 @@ public class var1Test {
 	//
 	@Test(dataProvider = "myCaseProvider")
 	public void task4(int n, DAY_OF_WEEK day){
-		assertEquals(new var1().FDay(n), day);
+		assertEquals(new var1().getDay(n), day);
 	}
 
 	@DataProvider
@@ -54,12 +54,12 @@ public class var1Test {
 	//negative test
 	@Test(expectedExceptions = RuntimeException.class)
 	public void negativeTask4(){
-		new var1().FDay(-2);
+		new var1().getDay(-2);
 	}
 	//
 	@Test(dataProvider = "myForProvider")
 	public void task5(int K, int N, int[] arr){
-		assertEquals(new var1().FFor(K, N), arr);
+		assertEquals(new var1().getFor(K, N), arr);
 	}
 
 	@DataProvider
@@ -69,13 +69,13 @@ public class var1Test {
 	// negative test
 	@Test(expectedExceptions = RuntimeException.class)
 	public void negativeTask5(){
-		new var1().FFor(5,-2);
+		new var1().getFor(5,-2);
 	}
 
 	//
 	@Test(dataProvider = "myWhileProvider")
 	public void task6(double A, double B, double res){
-		assertEquals(new var1().FWhile(A, B), res, EPS);
+		assertEquals(new var1().getWhile(A, B), res, EPS);
 	}
 
 	@DataProvider
@@ -85,13 +85,13 @@ public class var1Test {
 	// negative test
 	@Test(expectedExceptions = RuntimeException.class)
 	public void negativeTask6(){
-		new var1().FWhile(1,2);
+		new var1().getWhile(1,2);
 	}
 
 	//
 	@Test(dataProvider = "myArrayProvider")
 	public void task7(int N, int[] res){
-		assertEquals(new var1().FArray(N), res);
+		assertEquals(new var1().getArray(N), res);
 	}
 
 	@DataProvider
@@ -101,13 +101,13 @@ public class var1Test {
 	//negative test
 	@Test(expectedExceptions = RuntimeException.class)
 	public void task7(){
-		new var1().FArray(-1);
+		new var1().getArray(-1);
 	}
 
 	//
 	@Test(dataProvider = "myMatrixProvider")
 	public void task8(int N, int M, int[][] res){
-		assertEquals(new var1().FMatrix(N, M), res);
+		assertEquals(new var1().getMatrix(N, M), res);
 	}
 
 	@DataProvider
@@ -123,7 +123,7 @@ public class var1Test {
 	//negative test
 	@Test(expectedExceptions = RuntimeException.class)
 	public void negativeTask8(){
-		new var1().FMatrix(-2, 0);
+		new var1().getMatrix(-2, 0);
 	}
 
 }
